@@ -1,0 +1,10 @@
+# Local editor / tooling config
+.claude/
+
+# Throwaway design previews — not part of the live site
+theme-preview.html
+work-preview.html
+
+# OS junk
+.DS_Store
+Thumbs.db

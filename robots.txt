@@ -1,0 +1,7 @@
+# Allow crawlers to READ the pages on purpose — the page-level
+# <meta name="robots" content="noindex"> tag in each page's <head>
+# is what actually keeps this site out of search results.
+# (Google has to be allowed to read the page to see that tag.)
+
+User-agent: *
+Allow: /

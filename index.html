@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Ishan Khandekar — a high-school web designer who hand-codes custom websites that actually reflect your brand." />
+    <!-- Keep this site out of search results (invisible to name searches) -->
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Ishan Khandekar — Web Designer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Caveat:wght@600;700&family=Hanken+Grotesk:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Subtle anchoring grid behind everything -->
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- ===== ANNOUNCEMENT RIBBON ===== -->
+    <div class="announce" id="announce">
+        <span>✳ Currently accepting <strong>2–3 free projects</strong><span class="announce-tail"> — first come, first
+                served.</span></span>
+        <button class="announce-close" id="announceClose" aria-label="Dismiss">×</button>
+    </div>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar" id="navbar">
+        <a href="#hero" class="logo">Ishan<span class="accent">.</span></a>
+        <nav class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#work">Work</a>
+            <a href="#difference">Why me</a>
+            <a href="#services">Pricing</a>
+            <a href="#contact" class="nav-cta">Let's talk</a>
+        </nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </header>
+
+    <!-- ===== DARK MODE TOGGLE ===== -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+        </svg>
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4" />
+            <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+        </svg>
+    </button>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="index-line reveal">
+            <span>Portfolio — Nº 01</span>
+            <span>Est. 9th grade · CS class</span>
+        </div>
+
+        <div class="hero-copy">
+            <p class="eyebrow reveal"><span class="status-dot"></span> High-school web designer · open for projects</p>
+            <h1 class="reveal">I make websites that feel
+                <span class="swap-wrap">
+                    <span class="swap" id="swap">yours</span>
+                    <svg class="underline" viewBox="0 0 300 16" preserveAspectRatio="none">
+                        <path id="underlinePath" d="M4 11 C 50 4, 90 14, 140 8 S 220 3, 260 10 S 292 12, 296 8" />
+                    </svg>
+                </span>.
+            </h1>
+            <p class="hero-sub reveal">Hey, I'm Ishan Khandekar — a 16-year-old who hand-codes every site from scratch.
+                No templates, no page builders, so your website actually looks like <em>you</em>, not like ten thousand
+                other sites on the internet.</p>
+            <span class="hand-note reveal">↳ yep, that word keeps changing</span>
+            <div class="hero-actions reveal">
+                <a href="#work" class="btn btn-primary">See my work</a>
+                <a href="#contact" class="btn btn-ghost">Start a project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== MARQUEE ===== -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Hand-coded<span class="ast">✳</span>No templates<span class="ast">✳</span>Built by a
+                16-year-old<span class="ast">✳</span>Custom, never copied<span class="ast">✳</span></span>
+            <span>Hand-coded<span class="ast">✳</span>No templates<span class="ast">✳</span>Built by a
+                16-year-old<span class="ast">✳</span>Custom, never copied<span class="ast">✳</span></span>
+        </div>
+    </div>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section" id="about">
+        <div class="about-wrap">
+            <!-- Photo + quick facts -->
+            <div class="about-visual reveal">
+                <div class="photo-frame">
+                    <img src="images/pic.png" alt="Ishan Khandekar, web designer" class="about-photo" />
+                </div>
+
+                <div class="facts-card">
+                    <span class="facts-title">at a glance</span>
+                    <ul>
+                        <li><span>Age</span><strong>16</strong></li>
+                        <li><span>Status</span><strong>High schooler</strong></li>
+                        <li><span>Coding since</span><strong>9th grade</strong></li>
+                        <li><span>Loves</span><strong>Music, art, building</strong></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Story -->
+            <div class="about-text reveal">
+                <span class="section-tag">Nº 02 — About me</span>
+                <h2>Hey, I'm Ishan.</h2>
+                <p>It started in my <strong>9th-grade computer science class</strong>. The first time a page I wrote
+                    actually showed up in a browser, something just clicked — I could <em>make</em> things that lived on
+                    the internet.</p>
+                <p>Not long after, my uncle — a professor at <strong>IIT, one of India's top engineering
+                        institutes</strong> — needed a portfolio site for his academic work. I built it for him, start
+                    to finish. Watching something I made represent someone I care about, out in the real world, is what
+                    turned a class assignment into the thing I can't stop doing.</p>
+                <p>I'm a junior now, so I'm balancing real client work with school — which honestly makes me
+                    <em>faster</em> and more organized, not slower. And I'm still just getting started.</p>
+
+                <div class="beyond">
+                    <h4>When I'm not coding</h4>
+                    <div class="beyond-grid">
+                        <div class="beyond-item">
+                            <span class="beyond-icon">♪</span>
+                            <div>
+                                <strong>Music &amp; art</strong>
+                                <p>Always making something — the same eye for rhythm and color goes straight into my
+                                    designs.</p>
+                            </div>
+                        </div>
+                        <div class="beyond-item">
+                            <span class="beyond-icon">⚙</span>
+                            <div>
+                                <strong>Building &amp; tinkering</strong>
+                                <p>Taking things apart taught me how good design actually works underneath.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-skills">
+                    <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span><span>UI/UX</span><span>SEO
+                        Basics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WORK ===== -->
+    <section class="section" id="work">
+        <div class="section-head reveal">
+            <span class="section-tag">Nº 03 — Work</span>
+            <h2>Things I've built</h2>
+            <p class="section-desc">Real and open slots — every one coded from scratch, with the design shaped around the
+                person or brand behind it.</p>
+        </div>
+
+        <article class="showcase reveal">
+            <div class="browser" id="iitCard" tabindex="0" role="button"
+                aria-label="Expand the IIT project preview full-screen">
+                <div class="browser-bar">
+                    <div class="dots"><span></span><span></span><span></span></div>
+                    <span class="url">aalokkhandekar.iith.ac.in</span>
+                </div>
+                <div class="viewport">
+                    <span class="tour-hint">Hover to tour ↓ · click to expand</span>
+                    <img class="shot" id="iitShot" src="images/IITsite.png" loading="lazy" decoding="async"
+                        alt="Full-page preview of Professor Aalok Khandekar's IIT portfolio site" />
+                </div>
+            </div>
+            <div class="showcase-body">
+                <div class="showcase-info">
+                    <h3>Prof. Aalok Khandekar — IIT</h3>
+                    <p>A full academic portfolio for my uncle, a professor at IIT: research, publications, mentorship and
+                        contact. My first real project — and the one that got me hooked.</p>
+                    <div class="work-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Academic</span>
+                    </div>
+                    <span class="expand-hint">⤢ Click to view the full site</span>
+                </div>
+                <span class="badge">Launching soon</span>
+            </div>
+        </article>
+
+        <div class="work-grid">
+            <a href="#contact" class="work-card work-card-open reveal">
+                <span class="open-plus">+</span>
+                <h3>This could be you!</h3>
+                <p>An open slot with your name on it. Be one of my first clients and I'll build it free.</p>
+                <span class="open-cta">Claim this spot →</span>
+            </a>
+
+            <a href="#contact" class="work-card work-card-open reveal">
+                <span class="open-plus">+</span>
+                <h3>…and you too!</h3>
+                <p>Got a brand, a passion project, or a small business? Let's put it here.</p>
+                <span class="open-cta">Let's build it →</span>
+            </a>
+        </div>
+        <p class="work-note reveal">Just getting started — my first real client was the IIT site above, and these open
+            spots are waiting for the next ones.</p>
+    </section>
+
+    <!-- ===== THE DIFFERENCE ===== -->
+    <section class="section" id="difference">
+        <div class="section-head reveal">
+            <span class="section-tag">Nº 04 — Why me</span>
+            <h2>Why not just use Squarespace?</h2>
+            <p class="section-desc">Fair question — template builders are everywhere. Here's the honest difference
+                between dragging blocks into someone else's template and having a site built <em>for</em> you.</p>
+        </div>
+
+        <div class="compare-grid">
+            <div class="compare-col compare-them reveal">
+                <div class="compare-head">
+                    <span class="compare-label">Template builders</span>
+                    <span class="compare-sub">Squarespace, Wix, etc.</span>
+                </div>
+                <ul>
+                    <li>You bend <em>your</em> brand to fit <em>their</em> layout</li>
+                    <li>The same templates thousands of others use</li>
+                    <li>Monthly fees, forever — usually $16–49/mo</li>
+                    <li>Heavier, slower pages loaded with extra code</li>
+                    <li>You can only do what the builder allows</li>
+                    <li>Generic — it looks "fine," never <em>you</em></li>
+                </ul>
+            </div>
+
+            <div class="compare-col compare-me reveal">
+                <div class="compare-head">
+                    <span class="compare-label">Working with me</span>
+                    <span class="compare-sub">custom &amp; hand-coded</span>
+                </div>
+                <ul>
+                    <li>The design is built <em>around</em> your brand and values</li>
+                    <li>One-of-a-kind — literally nobody else has your site</li>
+                    <li>You own the code; no forced monthly subscription</li>
+                    <li>Lightweight, hand-coded, genuinely fast</li>
+                    <li>If you can picture it, I can build it</li>
+                    <li>A site that <em>feels</em> like your brand the second it loads</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="values-note reveal">
+            <h3>Your design should say something before anyone reads a word.</h3>
+            <p>A website isn't just information on a screen — it's a first impression, a feeling. Every color, font,
+                spacing choice and little animation is quietly telling visitors who you are. A template can't know what
+                your brand stands for. I take the time to actually understand your core values — what you care about,
+                who you're for, how you want people to feel — and then design every detail to communicate exactly that.
+                That's the part a drag-and-drop builder will never do for you.</p>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES & PRICING ===== -->
+    <section class="section" id="services">
+        <div class="section-head reveal">
+            <span class="section-tag">Nº 05 — Pricing</span>
+            <h2>Real talk: this isn't about the money.</h2>
+            <p class="section-desc">I'm doing this for the experience, the portfolio, and the fun of it — not to get
+                rich. So my prices are low on purpose, and <strong>the most I'll ever charge is $50</strong>. What I
+                really want is great work to show and someone happy to vouch for me.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="price-card reveal">
+                <h3>Passion Project</h3>
+                <p class="price"><span class="price-cur">$</span>0</p>
+                <p class="price-for">Free · for my first few clients</p>
+                <ul>
+                    <li>A clean, custom one-page site</li>
+                    <li>Mobile responsive</li>
+                    <li>Contact form</li>
+                    <li>In exchange: a testimonial +</li>
+                    <li>permission to feature it here</li>
+                </ul>
+                <a href="#contact" class="btn btn-ghost btn-block">Let's do it</a>
+            </div>
+
+            <div class="price-card price-featured reveal">
+                <span class="price-badge">Most popular</span>
+                <h3>Standard</h3>
+                <p class="price"><span class="price-cur">$</span>30</p>
+                <p class="price-for">Multi-page site</p>
+                <ul>
+                    <li>Up to 4–5 pages</li>
+                    <li>Fully custom design &amp; animations</li>
+                    <li>Contact form + basic SEO</li>
+                    <li>A couple rounds of revisions</li>
+                    <li>Still ridiculously cheap, I know</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary btn-block">Choose Standard</a>
+            </div>
+
+            <div class="price-card reveal">
+                <span class="price-badge price-badge-ghost">My ceiling</span>
+                <h3>The Max</h3>
+                <p class="price"><span class="price-cur">$</span>50</p>
+                <p class="price-for">Everything I've got</p>
+                <ul>
+                    <li>Everything in Standard</li>
+                    <li>More pages &amp; advanced interactivity</li>
+                    <li>Extra rounds of revisions</li>
+                    <li>Priority on my schedule</li>
+                    <li>The most I'll ever charge — promise</li>
+                </ul>
+                <a href="#contact" class="btn btn-ghost btn-block">Go all in</a>
+            </div>
+        </div>
+
+        <p class="work-note reveal">Not here to make a living off this — just to build things I'm proud of and help real
+            people while I'm at it.</p>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section" id="contact">
+        <div class="contact-wrap">
+            <div class="contact-head reveal">
+                <span class="section-tag">Nº 06 — Contact</span>
+                <h2>Let's build something that's <span class="accent-text">actually yours</span>.</h2>
+                <p>Have a project in mind, or just want to talk it through? Tell me a bit about it and I'll get back to
+                    you within 48 hours.</p>
+                <ul class="contact-list">
+                    <li><span class="c-icon">✉</span> ishankhandekar614@gmail.com</li>
+                    <li><span class="c-icon">⚡</span> Usually replies within 2 days</li>
+                    <li><span class="c-icon">◎</span> Available worldwide (remote)</li>
+                </ul>
+                <span class="hand-note">↳ no pressure, seriously</span>
+            </div>
+
+            <form class="contact-form reveal" id="contactForm" novalidate>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required />
+                    <span class="error-msg" data-for="name"></span>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="you@email.com" required />
+                    <span class="error-msg" data-for="email"></span>
+                </div>
+                <div class="field">
+                    <label for="project">Project type</label>
+                    <select id="project" name="project">
+                        <option value="Passion Project">Passion Project — free one-page site</option>
+                        <option value="Standard" selected>Standard — multi-page ($30)</option>
+                        <option value="The Max">The Max — the works ($50)</option>
+                        <option value="Not sure">Not sure yet</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Tell me about your project, your brand, what matters to you..." required></textarea>
+                    <span class="error-msg" data-for="message"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Send message</button>
+                <p class="form-success" id="formSuccess">✓ Your email app is opening with your message ready — just hit
+                    send and it'll land in my inbox!</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== WORK LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lb-backdrop" id="lbBackdrop"></div>
+        <div class="lb-panel" role="dialog" aria-modal="true" aria-label="Prof. Aalok Khandekar — IIT project">
+            <button class="lb-close" id="lbClose" aria-label="Close preview">✕</button>
+            <div class="lb-scroll" id="lbScroll">
+                <img id="lbImg" src="" alt="Full-page preview of the IIT portfolio site" />
+            </div>
+            <div class="lb-info">
+                <h3>Prof. Aalok Khandekar — IIT</h3>
+                <p>Scroll to explore the full site. Built from scratch in HTML, CSS &amp; JavaScript — launching soon,
+                    live link coming at launch.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-mark">Ishan<span class="accent">.</span></span>
+            <p>Hand-coded with way too much care by Ishan Khandekar — a high schooler who loves this stuff.</p>
+            <p class="footer-year">© <span id="year"></span> — Built from scratch with HTML, CSS &amp; JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
