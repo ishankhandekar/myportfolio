@@ -34,7 +34,7 @@
 
     <!-- ===== ANNOUNCEMENT RIBBON ===== -->
     <div class="announce" id="announce">
-        <span>✳ Currently accepting <strong>2–3 free projects</strong><span class="announce-tail"> — first come, first
+        <span>✳ Only <strong>1–2 free spots</strong> left<span class="announce-tail"> — first come, first
                 served.</span></span>
         <button class="announce-close" id="announceClose" aria-label="Dismiss">×</button>
     </div>
@@ -281,60 +281,59 @@
     <section class="section" id="services">
         <div class="section-head reveal">
             <span class="section-tag">Nº 05 — Pricing</span>
-            <h2>Real talk: this isn't about the money.</h2>
-            <p class="section-desc">I'm doing this for the experience, the portfolio, and the fun of it — not to get
-                rich. So my prices are low on purpose, and <strong>the most I'll ever charge is $50</strong>. What I
-                really want is great work to show and someone happy to vouch for me.</p>
+            <h2>Simple, scope-based pricing.</h2>
+            <p class="section-desc">Every site is custom, so the price follows the scope of the work. Here's where each
+                kind of project generally starts.</p>
         </div>
 
         <div class="pricing-grid">
             <div class="price-card reveal">
+                <span class="price-badge price-badge-ghost">1–2 spots only</span>
                 <h3>Passion Project</h3>
                 <p class="price"><span class="price-cur">$</span>0</p>
-                <p class="price-for">Free · for my first few clients</p>
+                <p class="price-for">Free · limited availability</p>
                 <ul>
-                    <li>A clean, custom one-page site</li>
-                    <li>Mobile responsive</li>
+                    <li>Simple custom one-page site</li>
                     <li>Contact form</li>
-                    <li>In exchange: a testimonial +</li>
-                    <li>permission to feature it here</li>
+                    <li>Mobile responsive</li>
+                    <li>In exchange: a testimonial + permission to feature it</li>
                 </ul>
-                <a href="#contact" class="btn btn-ghost btn-block">Let's do it</a>
+                <a href="#contact" class="btn btn-ghost btn-block">Claim a spot</a>
             </div>
 
             <div class="price-card price-featured reveal">
                 <span class="price-badge">Most popular</span>
                 <h3>Standard</h3>
-                <p class="price"><span class="price-cur">$</span>30</p>
-                <p class="price-for">Multi-page site</p>
+                <p class="price"><span class="price-cur">$</span>200</p>
+                <p class="price-for">One-page or small multi-page</p>
                 <ul>
-                    <li>Up to 4–5 pages</li>
-                    <li>Fully custom design &amp; animations</li>
+                    <li>Custom one-page or small multi-page site</li>
                     <li>Contact form + basic SEO</li>
-                    <li>A couple rounds of revisions</li>
-                    <li>Still ridiculously cheap, I know</li>
+                    <li>2 rounds of revisions</li>
+                    <li>Your starting point for a clean, no-frills site</li>
                 </ul>
                 <a href="#contact" class="btn btn-primary btn-block">Choose Standard</a>
             </div>
 
             <div class="price-card reveal">
-                <span class="price-badge price-badge-ghost">My ceiling</span>
-                <h3>The Max</h3>
-                <p class="price"><span class="price-cur">$</span>50</p>
-                <p class="price-for">Everything I've got</p>
+                <h3>Custom</h3>
+                <p class="price"><span class="price-pre">from</span> <span class="price-cur">$</span>400</p>
+                <p class="price-for">Quoted per scope</p>
                 <ul>
-                    <li>Everything in Standard</li>
-                    <li>More pages &amp; advanced interactivity</li>
-                    <li>Extra rounds of revisions</li>
-                    <li>Priority on my schedule</li>
-                    <li>The most I'll ever charge — promise</li>
+                    <li>Calculators, animations &amp; terminal-style features</li>
+                    <li>Video editing &amp; multi-section scroll sites</li>
+                    <li>Anything with real build time</li>
+                    <li>Quoted per project, not a flat number</li>
                 </ul>
-                <a href="#contact" class="btn btn-ghost btn-block">Go all in</a>
+                <a href="#contact" class="btn btn-ghost btn-block">Get a quote</a>
             </div>
         </div>
 
-        <p class="work-note reveal">Not here to make a living off this — just to build things I'm proud of and help real
-            people while I'm at it.</p>
+        <div class="ecom-note reveal">
+            <h4>E-commerce — quote on request</h4>
+            <p>Online stores are their own thing — Shopify setup, product catalog, payments — and the scope swings too
+                widely to fit a tier. Tell me what you're selling and I'll put together a custom quote.</p>
+        </div>
     </section>
 
     <!-- ===== CONTACT ===== -->
@@ -367,9 +366,10 @@
                 <div class="field">
                     <label for="project">Project type</label>
                     <select id="project" name="project">
-                        <option value="Passion Project">Passion Project — free one-page site</option>
-                        <option value="Standard" selected>Standard — multi-page ($30)</option>
-                        <option value="The Max">The Max — the works ($50)</option>
+                        <option value="Passion Project">Passion Project — free one-page site (1–2 spots)</option>
+                        <option value="Standard" selected>Standard — one/small multi-page (from $200)</option>
+                        <option value="Custom">Custom — interactive / advanced (from $400)</option>
+                        <option value="E-commerce">E-commerce — online store (quote on request)</option>
                         <option value="Not sure">Not sure yet</option>
                     </select>
                 </div>

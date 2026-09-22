@@ -902,6 +902,7 @@ body.locked { overflow: hidden; }
 .price-card h3 { font-family: var(--display); font-size: 1.3rem; margin-bottom: 12px; }
 .price { font-family: var(--display); font-size: 2.7rem; font-weight: 800; line-height: 1.05; color: var(--ink); }
 .price-cur { color: var(--accent); font-size: 1.6rem; vertical-align: top; }
+.price-pre { font-size: 1rem; font-weight: 600; color: var(--faint); vertical-align: middle; }
 .price-for { color: var(--faint); font-size: 0.9rem; margin: 4px 0 22px; }
 
 .price-card ul { list-style: none; margin-bottom: 26px; }
@@ -915,6 +916,18 @@ body.locked { overflow: hidden; }
 }
 
 .price-card li::before { content: "✓"; position: absolute; left: 0; color: var(--sage-deep); font-weight: 700; }
+
+.ecom-note {
+    max-width: 640px;
+    margin: 34px auto 0;
+    text-align: center;
+    border: 1.5px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 26px;
+    background: var(--surface);
+}
+.ecom-note h4 { font-family: var(--display); font-size: 1.1rem; margin-bottom: 8px; color: var(--ink); }
+.ecom-note p { color: var(--muted); font-size: 0.98rem; line-height: 1.55; }
 
 /* ===== Contact ===== */
 .contact-wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 56px; align-items: start; }
